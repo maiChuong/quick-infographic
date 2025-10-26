@@ -1,0 +1,45 @@
+/* layers.css — Styles for layer control panel and buttons */
+
+#layer-pane {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+#layer-pane h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.layer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.layer-row button {
+  margin-left: 6px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.layer-row button:hover {
+  background-color: #d0d0d0;
+}
+
+.layer-row button:active {
+  background-color: #c0c0c0;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Infographic</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/editor.css" />
+  <link rel="stylesheet" href="styles/modal.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  <link rel="stylesheet" href="styles/layers.css" />
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="assets/logo.png" alt="Quick Infographic Logo" />
+      <h1>Quick Infographic</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="sidebar">
+      <section id="layout-section">
+        <h3>Layout</h3>
+        <button id="layout-2">2 Slots</button>
+        <button id="layout-3">3 Slots</button>
+      </section>
+
+      <section>
+        <h3>Photos</h3>
+        <input type="file" id="photo-upload" multiple />
+        <div id="photo-gallery"></div>
+      </section>
+
+      <section>
+        <h3>Text</h3>
+        <input type="text" id="text-input" placeholder="Enter sticker text" />
+        <button id="add-text">Add Text</button>
+      </section>
+
+      <section>
+        <h3>Watermark</h3>
+        <input type="file" id="watermark-upload" />
+        <button id="apply-watermark">Apply</button>
+      </section>
+
+      <section id="layer-pane">
+        <h3>Layers</h3>
+        <div id="layer-list"></div>
+      </section>
+
+      <section>
+        <h3>Export</h3>
+        <select id="export-format">
+          <option value="png">PNG</option>
+          <option value="jpg">JPG</option>
+        </select>
+        <button id="export-btn">Export Image</button>
+      </section>
+    </div>
+
+    <div id="editor-canvas">
+      <!-- Canvas slots will be dynamically generated -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Quick Infographic. All rights reserved.
+  </footer>
+
+  <div id="modal-container"></div>
+
+  <script type="module" src="scripts/app.js"></script>
+
+</body>
+</html>

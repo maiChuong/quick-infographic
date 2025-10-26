@@ -1,0 +1,74 @@
+/* responsive.css — Media queries for mobile and tablet responsiveness */
+
+@media (max-width: 1024px) {
+  #sidebar {
+    width: 220px;
+    padding: 12px;
+  }
+
+  .photo-thumb {
+    width: 70px;
+    height: 70px;
+  }
+
+  .layout-slot {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  header, footer {
+    padding: 8px 12px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+  }
+
+  #editor-canvas {
+    margin: 12px;
+    padding: 12px;
+  }
+
+  .modal-box {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .text-sticker {
+    max-width: 160px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .photo-thumb {
+    width: 60px;
+    height: 60px;
+  }
+
+  .layout-slot {
+    font-size: 0.9rem;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
